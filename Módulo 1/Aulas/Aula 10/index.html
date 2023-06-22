@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Este site deve se adaptar a diferentes ambientes como celulares, tablets e desktops.</p>
+
+    <picture>
+        <source media="(max-width: 700px)" srcset="img/img-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/img-m.png" type="image/png">
+        <img src="./img/img-g.png" alt="Imagem Flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Pega essa musiquinha meu nobre</p>
+
+    <!-- MP3, WAV(pesado) e OGG -->
+    <!-- <audio src="./midia/musica.mp3" controls></audio> -->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="./midia/musica.mp3" type="audio/mpeg">
+        <source src="./midia/musica.ogg" type="audio/ogg">
+        <source src="./midia/musica.wav" type="audio/wav">
+    </audio>
+
+    <h1>Vídeos hospedados localmente</h1>
+    <!-- <video src="./midia/video.mp4" width="400px" controls></video> -->
+    <video width="560px" controls loop>
+        <source src="./midia/video.mp4" type="video/mp4">
+    </video>
+
+    <h1>Vídeos hospedados de forma externa</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jWF-RO9W0Dg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</body>
+</html>

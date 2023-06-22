@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+
+    <h2>Código-Fonte / Pré-Formatação</h2>
+    <p>O comando <code>document.getElementById("teste")</code> é usado em JavaScript.</p>
+    <pre> <!-- Código com a Identação mantida -->
+        <code>
+    if (total > 1) {
+        if ((usuario == "Caleb") && (senha == "123")) {
+            window.open("https://siga.cps.sp.gov.br/aluno/loginetec.aspx", "_self");
+        } else {
+            total--;
+            document.getElementById("tentativas").innerHTML = "Tentativas: " + total;
+        }
+        } else {
+        var botao = document.getElementById("entrar");
+        botao.removeEventListener("click", login);
+        document.getElementById("tentativas").innerHTML = "BLOQUEADO";
+        }
+    }
+        </code>
+    </pre>
+
+    <h2>Citação Simples</h2>
+    <p>Como dizia uma voz antiga: <q>ai zé da manga</q></p>
+
+    <h2>Citação Completa (Blocos)</h2>
+    <blockquote cite="https://www.youtube.com/watch?v=1TZV0o3vqAs">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quos laudantium sint corporis corrupti rerum velit, quis nobis. Dolor quaerat incidunt cumque eos non expedita impedit voluptas animi placeat suscipit.</p>
+    </blockquote>
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr></p>
+
+</body>
+</html>
